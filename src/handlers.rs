@@ -5,12 +5,13 @@ pub async fn generate_token() {
 
     let client_id = Text::new("What's your Client Id?")
         .with_help_message("Insert your Client Id")
-        .with_placeholder("Client id...")
+        .with_placeholder("...")
         .prompt()
         .unwrap();
 
     let client_secret = Text::new("What's your Client Secret?")
         .with_help_message("Insert your Client Secret")
+        .with_placeholder("...")
         .prompt()
         .unwrap();
 
@@ -55,13 +56,13 @@ pub async fn revoke_token() {
 
     let client_id = Text::new("What's your Client Id?")
         .with_help_message("Insert your Client Id")
-        .with_placeholder("Client id...")
+        .with_placeholder("...")
         .prompt()
         .unwrap();
 
     let token = Text::new("What's your Token?")
         .with_help_message("Insert your Token")
-        .with_placeholder("Token...")
+        .with_placeholder("...")
         .prompt()
         .unwrap();
 
